@@ -108,7 +108,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 80vh;
+        min-height: 100vh;
         text-align: center;
         position: relative;
       }
@@ -519,7 +519,7 @@
         .about-content {
           flex-direction: column;
           text-align: center;
-        }
+        } 
 
         .about-img {
           margin-bottom: 2rem;
@@ -530,6 +530,8 @@
         }
       }
 
+    /* responsif styles */
+
       @media screen and (max-width: 768px) {
         .nav-links {
           position: absolute;
@@ -539,11 +541,12 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 100%;
+          width: 45%;
           transform: translateX(100%);
           transition: transform 0.5s ease-in;
           z-index: 100;
-          margin-right: 0; /* Reset margin for mobile */
+          margin-right: 0;
+          border-radius: 25px; /* Reset margin for mobile */
         }
 
         .nav-links li {
@@ -1298,69 +1301,69 @@
       </div>
 
       <!-- Portfolio Grid -->
-      <div class="portfolio-item commercial">
-        <!-- Project 1 -->
-        <div class="portfolio-item residential">
-          <div class="portfolio-img">
-            <img src="img/KLASIK DESAIN-20250516T172509Z-1-001/KLASIK DESAIN/Enscape_2023-10-30-15-55-23.jpg" alt="Modern Residence" />
-            <div class="portfolio-overlay">
-                <a href="klasik.html" class="portfolio-btn">View Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
+       <section class="portfolio-section">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item residential">
+                    <div class="portfolio-img">
+                        <img src="img/KLASIK DESAIN-20250516T172509Z-1-001/KLASIK DESAIN/11.png" alt="Modern Residence" />
+                        <div class="portfolio-overlay">
+                            <a href="klasik.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Project 2 -->
+                <!-- Project 2 -->
+                <div class="portfolio-item commercial">
+                    <div class="portfolio-img">
+                        <img src="img/Teruai-20250516T181310Z-1-001/Teruai/2.png" alt="Office Building" />
+                        <div class="portfolio-overlay">
+                            <a href="teruai.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="portfolio-item commercial">
-          <div class="portfolio-img">
-            <img src="img/Teruai-20250516T181310Z-1-001/Teruai/2.png" alt="Office Building" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <a href="teruai.html" class="portfolio-btn">View Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item commercial">
+                    <div class="portfolio-img">
+                        <img src="img/Rumah Loteng/1.2 night.jpg" alt="Office Building" />
+                        <div class="portfolio-overlay">
+                            <a href="loteng.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Project 3 -->
-        <div class="portfolio-item commercial">
-          <div class="portfolio-img">
-            <img src="img/Rumah Loteng/1.2 night.jpg" alt="Office Building" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <a href="loteng.html" class="portfolio-btn">View Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- Project 4 -->
+                <div class="portfolio-item industrial">
+                    <div class="portfolio-img">
+                        <img src="img/MUSHALLA AL ABIDIN/belajar rendering.jpg" alt="Manufacturing Facility" />
+                        <div class="portfolio-overlay">
+                            <a href="musalla.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Project 4 -->
-        <div class="portfolio-item industrial">
-          <div class="portfolio-img">
-            <img src="img/MUSHALLA AL ABIDIN-20250516T172234Z-1-001/MUSHALLA AL ABIDIN/belajar rendering.jpg" alt="Manufacturing Facility" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <a href="musalla.html" class="portfolio-btn">View Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- Project 5 -->
+                <div class="portfolio-item renovation">
+                    <div class="portfolio-img">
+                        <img src="img/KANTO DESA JAGARAGA-20250516T172429Z-1-001/KANTO DESA JAGARAGA/1.6.jpg" alt="Historical Building Renovation" />
+                        <div class="portfolio-overlay">
+                            <a href="kantor.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Project 5 -->
-        <div class="portfolio-item renovation">
-          <div class="portfolio-img">
-            <img
-              src="img/KANTO DESA JAGARAGA-20250516T172429Z-1-001/KANTO DESA JAGARAGA/14.jpg"
-              alt="Historical Building Renovation"
-            />
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <a href="kantor.html" class="portfolio-btn">View Details</a>
-              </div>
+                <!-- project 6 -->
+                 <div class="portfolio-item renovation">
+                    <div class="portfolio-img">
+                        <img src="img/1-20250517T135053Z-1-001/1/1.2.jpg" alt="Historical Building Renovation" />
+                        <div class="portfolio-overlay">
+                            <a href="1.html" class="portfolio-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+      </section>
     </section>
 
     <!-- Contact Section -->
@@ -1426,17 +1429,18 @@
     <footer>
       <div class="footer-content">
         <div class="footer-links">
-          <a href="#home" class="footer-link">Home</a>
-          <a href="#about" class="footer-link">About</a>
-          <a href="#projects" class="footer-link">Projects</a>
-          <a href="#contact" class="footer-link">Contact</a>
+          <a href="index.html#home" class="footer-link">Home</a>
+          <a href="index.html#Service" class="footer-link">Service</a>
+          <a href="index.html#portofolio" class="footer-link">Portfolio</a>
+          <a href="index.html#contact" class="footer-link">Contact</a>
         </div>
         <p class="copyright">
-          &copy; <span id="current-year"></span> Darawa Studio. All Rights
+          &copy; <span id="current-year"></span> DARAWA STUDIO. All Rights
           Reserved.
         </p>
       </div>
     </footer>
+
 
     <!-- WhatsApp floating button -->
     <a
